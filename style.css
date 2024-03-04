@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&family=Manrope:wght@500;700&family=Outfit&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: work sans;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: hsl(275, 100%, 97%);
+    flex-direction: column;
+    background-position: top;
+    background-image: url(assets/images/background-pattern-desktop.svg);
+}
+#main {
+    width: 35%;
+    height: 50%;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    padding: 15px 20px;
+    color: hsl(292, 42%, 14%);
+}
+.heading {
+    display: flex;
+    flex-direction: row;
+}
+h1 {
+    padding: 15px;
+    font-weight: 700;
+}
+.heading img {
+    width: 30px;
+}
+button {
+    width: 100%;
+    border: 0;
+    text-align: left;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 16px;
+    background-color: transparent;
+    margin: 1rem 0;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    transition: 0.4s;
+    outline: none;
+}
+button:hover {
+    color: hsl(293, 58%, 55%);
+}
+p {
+    color: hsl(291, 3%, 57%);
+    margin-bottom: 1rem;
+    font-size: 16px;
+}
+.icons {
+    display: flex;
+    flex-direction: column;
+    float: right;
+}
+.icons img, #row img {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+#row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    margin-bottom: 1rem;
+}
+#panel {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 10px;
+    transition: max-height 0.2s ease-out;
+}
+.minus {
+    display: none;
+}
+h3 {
+    width: 90%;
+}
+.attribution{
+    margin-top: 2rem;
+ }
+@media screen and (max-width: 400px) {
+    body {
+        background-image: url(assets/images/background-pattern-mobile.svg);
+    }
+    #main {
+        width: 80%;
+    }   
+    
+}
